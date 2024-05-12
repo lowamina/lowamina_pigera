@@ -1,0 +1,11 @@
+.body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #aeaee9;
+    color: #fff;
+
+}
+.card-group{
+    margin-top: 10px;
+}
+/* related to project section */
