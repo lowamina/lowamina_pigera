@@ -251,6 +251,49 @@ footer p {
     transition-duration: 400ms;
     transition-property: width, left;
 }
+.skill {
+    width: 410px;
+    height: 254px;
+    border-radius: 4px;
+    background:transparent;
+    display: flex;
+    gap: 10px;
+    padding: .7em;
+  }
+  
+  .skill p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background:transparent;
+    border: 5px solid #8376e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skill p:hover {
+    flex: 4;
+  }
+  
+  .skill p span {
+    min-width: 20em;
+    padding: .10em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #fbedf2;
+    letter-spacing: .1em;
+  }
+  
+  .skill p:hover span {
+    transform: rotate(0);
+  }
+  
 
 
 @media screen and (max-width:992px) {
