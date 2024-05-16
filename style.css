@@ -251,6 +251,7 @@ footer p {
     transition-duration: 400ms;
     transition-property: width, left;
 }
+
 .skill {
     width: 410px;
     height: 254px;
@@ -312,6 +313,7 @@ footer p {
         transition-duration: .3s;
         
     }
+   
     
 }
 
