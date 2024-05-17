@@ -256,31 +256,31 @@ footer p {
     width: 410px;
     height: 254px;
     border-radius: 4px;
-    background:transparent;
+    background: transparent;
     display: flex;
     gap: 10px;
     padding: .7em;
-  }
-  
-  .skill p {
+}
+
+.skill p {
     height: 100%;
     flex: 1;
     overflow: hidden;
     cursor: pointer;
     border-radius: 2px;
     transition: all .5s;
-    background:transparent;
+    background: transparent;
     border: 5px solid #8376e7;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .skill p:hover {
+}
+
+.skill p:hover {
     flex: 4;
-  }
-  
-  .skill p span {
+}
+
+.skill p span {
     min-width: 20em;
     padding: .10em;
     text-align: center;
@@ -289,16 +289,58 @@ footer p {
     text-transform: uppercase;
     color: #fbedf2;
     letter-spacing: .1em;
-  }
-  
-  .skill p:hover span {
+}
+
+.skill p:hover span {
     transform: rotate(0);
-  }
-  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+footer {
+    background-color:#b0a5fdc5;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-info a i {
+    margin-right: 5px;
+}
+
+/* Style for icons (Font Awesome in this case) */
+/* You can adjust the icon size and other properties here */
+.fa {
+    font-size: 20px;
+}
 
 
 @media screen and (max-width:992px) {
-    .toggle{
+    .toggle {
         display: block;
 
         position: relative;
@@ -311,16 +353,29 @@ footer p {
         justify-content: center;
         gap: 10px;
         transition-duration: .3s;
-        
+
     }
-   
-    
+
+
 }
 
 @media screen and (max-width:713px) {
-    .image{
+    .image {
         margin-top: 5px;
     }
-   
+
 }
 
+@media screen and (max-width:400px) {
+    .skill {
+        width: 310px;
+        height: 254px;
+        border-radius: 4px;
+        background: transparent;
+        display: flex;
+        gap: 10px;
+        padding: .7em;
+    }
+
+
+}
