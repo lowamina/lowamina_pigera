@@ -246,7 +246,7 @@ footer p {
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #8376e7;
+    background-color: white;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
@@ -303,7 +303,7 @@ footer p {
 
 
 footer {
-    background-color:#b0a5fdc5;
+    background-color: #b0a5fdc5;
     color: #fff;
     padding: 20px 0;
 }
@@ -317,7 +317,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+
 }
 
 .contact-info a {
@@ -338,63 +338,6 @@ footer {
     font-size: 20px;
 }
 
-.button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(20, 20, 20);
-    border: none;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
-    cursor: pointer;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .svgIcon {
-    width: 12px;
-    transition-duration: 0.3s;
-  }
-  
-  .svgIcon path {
-    fill: white;
-  }
-  
-  .button:hover {
-    width: 140px;
-    border-radius: 50px;
-    transition-duration: 0.3s;
-    background-color: rgb(181, 160, 255);
-    align-items: center;
-  }
-  
-  .button:hover .svgIcon {
-    /* width: 20px; */
-    transition-duration: 0.3s;
-    transform: translateY(-200%);
-  }
-  
-  .button::before {
-    position: absolute;
-    bottom: -20px;
-    content: "Back to Top";
-    color: white;
-    /* transition-duration: .3s; */
-    font-size: 0px;
-  }
-  
-  .button:hover::before {
-    font-size: 13px;
-    opacity: 1;
-    bottom: unset;
-    /* transform: translateY(-30px); */
-    transition-duration: 0.3s;
-  }
-  
 
 @media screen and (max-width:992px) {
     .toggle {
@@ -435,4 +378,246 @@ footer {
     }
 
 
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(181, 160, 255);
+    align-items: center;
+}
+
+.button:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+
+
+.buttonNav {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.buttonNav:focus,
+.buttonNav:hover {
+    color: #fff;
+}
+
+.buttonNav:focus:after,
+.buttonNav:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.buttonNav:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.burger input {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: rgb(175, 97, 226);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+
+.burger input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.burger input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.burger input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+@media screen and (max-width:992px) {
+    .burger {
+        display: block;
+
+
+    }
+
+}
+
+.buttont {
+    width: 140px;
+    height: 56px;
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    background: none;
+    position: relative;
+    padding-bottom: 2em;
+    cursor: pointer;
+}
+
+.buttont>div,
+.buttont>svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.buttont:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+}
+
+.buttont:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.buttont .clone>*,
+.buttont .text>* {
+    opacity: 1;
+    font-size: 1.3rem;
+    transition: 0.2s;
+    margin-left: 4px;
+}
+
+.buttont .clone>* {
+    transform: translateY(60px);
+}
+
+.buttont:hover .clone>* {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.buttont:hover .text>* {
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.buttont:hover .clone> :nth-child(1) {
+    transition-delay: 0.15s;
+}
+
+.buttont:hover .clone> :nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.buttont:hover .clone> :nth-child(3) {
+    transition-delay: 0.25s;
+}
+
+.buttont:hover .clone> :nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+/* icon style and hover */
+.buttont svg {
+    width: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.2s ease-out;
+}
+
+.buttont:hover svg {
+    transform: translateY(-50%) rotate(-90deg);
 }
