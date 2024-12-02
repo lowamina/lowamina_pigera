@@ -3,15 +3,22 @@
     font-family: 'Roboto', sans-serif;
     background-color: black;
     color: #fff;
+    background-image: url(5cf2660af5f4214def7166dc7a7c8062.jpg);
 
 }
 
 .intro {
-    margin-top: 300px;
+    
+    margin-top: 200px;
     margin-left: 50px;
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
+   position: absolute;
+}
+.slides{
+    position: absolute;
+    width: 100%;
 }
 
 .image {
@@ -20,6 +27,10 @@
     margin-right: 50px;
 
 
+}
+.projects{
+    margin-top: 620px;
+   
 }
 
 
@@ -406,7 +417,9 @@ footer {
     fill: white;
 }
 
-.button:hover {
+
+
+.buttonnav:hover {
     width: 140px;
     border-radius: 50px;
     transition-duration: 0.3s;
@@ -414,13 +427,62 @@ footer {
     align-items: center;
 }
 
-.button:hover .svgIcon {
+.buttonnav:hover .svgIcon {
     /* width: 20px; */
     transition-duration: 0.3s;
     transform: translateY(-200%);
 }
 
+/* 2025 updated nave bar */
+/* From Uiverse.io by satyamchaudharydev */ 
+/* === removing default button style ===*/
+.buttonnav1 {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .buttonnav1 {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: rgb(180, 122, 235);
+    --fs-size: 1.6em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .buttonnav1:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
 
+
+
+
+/* 
 
 .buttonNav {
     font-size: 18px;
@@ -460,8 +522,13 @@ footer {
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
-}
+}  */
 
+
+
+/* From Uiverse.io by satyamchaudharydev 
+/* === removing default button style ===*/
+/*  */
 .burger {
     position: relative;
     width: 40px;
@@ -621,3 +688,234 @@ footer {
 .buttont:hover svg {
     transform: translateY(-50%) rotate(-90deg);
 }
+/* contact us */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: url(background.jpg); */
+    background-color:transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact .content {
+    width: 70%;
+    text-align: center;
+    color: #fff;
+}
+.contact .content h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contact .content p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+    background-image: linear-gradient(#8376e7,black)
+}
+
+.contact_form h2 {
+    font-size: 30px;
+    color: #1c074aff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact_form .input_box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact_form .input_box input,
+.contact_form .input_box textarea {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 2px solid #1c074aff;
+    outline: none;
+}
+.contact_form .input_box textarea {
+    height: 100px;
+    resize: none;
+    padding: 10px;
+}
+.contact_form .input_box span {
+    position: absolute;
+    left: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #333;
+    pointer-events: none;
+    transition: .5s;
+}
+.contact_form .input_box input:focus ~ span,
+.contact_form .input_box input:valid ~ span,
+.contact_form .input_box textarea:focus ~ span,
+.contact_form .input_box textarea:valid ~ span {
+    font-size: 12px;
+    padding: 10px;
+    transform: translateY(-20px);
+    background: #fff;
+}
+.contact_form button {
+    width: 200px;
+    height: 50px;
+    background: #1c074aff;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact_info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact_info .flex {
+    display: flex;
+    justify-content: space-between;
+}
+.contact_info .box {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact_info .box .map {
+    width: 100%;
+}
+.contact_info .box .icon {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #1c074aff;
+}
+.contact_info .box .text {
+    color: #fff;
+}
+.contact_info .box .text h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.contact_info .box .text p {
+    font-size: 15px;
+}
+
+@media (max-width: 1270px) {
+    .contact {
+        padding: 50px;
+    }
+    .container {
+        gap: 50px;
+    }
+}
+@media (max-width: 1120px) {
+    .contact_info .flex {
+        flex-direction: column;
+    }
+}
+@media (max-width: 850px) {
+    .contact .content {
+        width: 90%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .contact_form {
+        width: 100%;
+    }
+    .contact_info {
+        width: 100%;
+    }
+}
+/* versio2 animation 2025 */
+
+
+.svg-frame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-top: 150px;
+    margin-right: 200px;
+
+  }
+  
+  .svg-frame svg {
+    position: absolute;
+    transition: .5s;
+    z-index: calc(1 - (0.2 * var(--j)));
+    transform-origin: center;
+    width: 344px;
+    height: 344px;
+    fill: none;
+  }
+  
+  .svg-frame:hover svg {
+    transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+  }
+  
+  .svg-frame svg #center {
+    transition: .5s;
+    transform-origin: center;
+  }
+  
+  .svg-frame:hover svg #center {
+    transform: rotate(-30deg) translateX(45px) translateY(-3px);
+  }
+  
+  #out2 {
+    animation: rotate16 7s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  #out3 {
+    animation: rotate16 3s ease-in-out infinite alternate;
+    transform-origin: center;
+    stroke: #ff0;
+  }
+  
+  #inner3,
+  #inner1 {
+    animation: rotate16 4s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  #center1 {
+    fill: #ff0;
+    animation: rotate16 2s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  @keyframes rotate16 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  
