@@ -8,15 +8,16 @@
 }
 
 .intro {
-    
+
     margin-top: 200px;
     margin-left: 50px;
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
-   position: absolute;
+    position: absolute;
 }
-.slides{
+
+.slides {
     position: absolute;
     width: 100%;
 }
@@ -28,9 +29,10 @@
 
 
 }
-.projects{
+
+.projects {
     margin-top: 620px;
-   
+
 }
 
 
@@ -434,7 +436,7 @@ footer {
 }
 
 /* 2025 updated nave bar */
-/* From Uiverse.io by satyamchaudharydev */ 
+/* From Uiverse.io by satyamchaudharydev */
 /* === removing default button style ===*/
 .buttonnav1 {
     margin: 0;
@@ -443,12 +445,12 @@ footer {
     padding: 0;
     border: none;
     cursor: pointer;
-  }
-  
-  /* button styling */
-  .buttonnav1 {
+}
+
+/* button styling */
+.buttonnav1 {
     --border-right: 6px;
-    --text-stroke-color: rgba(255,255,255,0.6);
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
     --animation-color: rgb(180, 122, 235);
     --fs-size: 1.6em;
     letter-spacing: 3px;
@@ -459,9 +461,10 @@ footer {
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);
-  }
-  /* this is the text, when you hover on button */
-  .hover-text {
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
     position: absolute;
     box-sizing: border-box;
     content: attr(data-text);
@@ -472,12 +475,13 @@ footer {
     overflow: hidden;
     transition: 0.5s;
     -webkit-text-stroke: 1px var(--animation-color);
-  }
-  /* hover */
-  .buttonnav1:hover .hover-text {
+}
+
+/* hover */
+.buttonnav1:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
-  }
+}
 
 
 
@@ -688,6 +692,7 @@ footer {
 .buttont:hover svg {
     transform: translateY(-50%) rotate(-90deg);
 }
+
 /* contact us */
 .contact {
     position: relative;
@@ -698,21 +703,24 @@ footer {
     justify-content: center;
     align-items: center;
     /* background: url(background.jpg); */
-    background-color:transparent;
+    background-color: transparent;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .contact .content {
     width: 70%;
     text-align: center;
     color: #fff;
 }
+
 .contact .content h2 {
     font-size: 35px;
     font-weight: 600;
     margin-bottom: 20px;
 }
+
 .contact .content p {
     font-size: 16px;
     font-weight: 500;
@@ -724,7 +732,7 @@ footer {
     justify-content: center;
     gap: 100px;
     margin-top: 50px;
-    background-image: linear-gradient(#8376e7,black)
+    background-image: linear-gradient(#8376e7, black)
 }
 
 .contact_form h2 {
@@ -733,11 +741,13 @@ footer {
     font-weight: 600;
     margin-bottom: 30px;
 }
+
 .contact_form .input_box {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
 }
+
 .contact_form .input_box input,
 .contact_form .input_box textarea {
     width: 100%;
@@ -747,11 +757,13 @@ footer {
     border: 2px solid #1c074aff;
     outline: none;
 }
+
 .contact_form .input_box textarea {
     height: 100px;
     resize: none;
     padding: 10px;
 }
+
 .contact_form .input_box span {
     position: absolute;
     left: 10px;
@@ -761,15 +773,17 @@ footer {
     pointer-events: none;
     transition: .5s;
 }
-.contact_form .input_box input:focus ~ span,
-.contact_form .input_box input:valid ~ span,
-.contact_form .input_box textarea:focus ~ span,
-.contact_form .input_box textarea:valid ~ span {
+
+.contact_form .input_box input:focus~span,
+.contact_form .input_box input:valid~span,
+.contact_form .input_box textarea:focus~span,
+.contact_form .input_box textarea:valid~span {
     font-size: 12px;
     padding: 10px;
     transform: translateY(-20px);
     background: #fff;
 }
+
 .contact_form button {
     width: 200px;
     height: 50px;
@@ -781,15 +795,18 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .contact_info {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
+
 .contact_info .flex {
     display: flex;
     justify-content: space-between;
 }
+
 .contact_info .box {
     position: relative;
     margin-bottom: 20px;
@@ -797,9 +814,11 @@ footer {
     align-items: center;
     gap: 20px;
 }
+
 .contact_info .box .map {
     width: 100%;
 }
+
 .contact_info .box .icon {
     background: #fff;
     width: 60px;
@@ -811,13 +830,16 @@ footer {
     font-size: 25px;
     color: #1c074aff;
 }
+
 .contact_info .box .text {
     color: #fff;
 }
+
 .contact_info .box .text h3 {
     font-size: 20px;
     margin-bottom: 5px;
 }
+
 .contact_info .box .text p {
     font-size: 15px;
 }
@@ -826,29 +848,36 @@ footer {
     .contact {
         padding: 50px;
     }
+
     .container {
         gap: 50px;
     }
 }
+
 @media (max-width: 1120px) {
     .contact_info .flex {
         flex-direction: column;
     }
 }
+
 @media (max-width: 850px) {
     .contact .content {
         width: 90%;
     }
+
     .container {
         flex-direction: column;
     }
+
     .contact_form {
         width: 100%;
     }
+
     .contact_info {
         width: 100%;
     }
 }
+
 /* versio2 animation 2025 */
 
 
@@ -864,9 +893,9 @@ footer {
     margin-top: 150px;
     margin-right: 200px;
 
-  }
-  
-  .svg-frame svg {
+}
+
+.svg-frame svg {
     position: absolute;
     transition: .5s;
     z-index: calc(1 - (0.2 * var(--j)));
@@ -874,177 +903,263 @@ footer {
     width: 344px;
     height: 344px;
     fill: none;
-  }
-  
-  .svg-frame:hover svg {
+}
+
+.svg-frame:hover svg {
     transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
-  }
-  
-  .svg-frame svg #center {
+}
+
+.svg-frame svg #center {
     transition: .5s;
     transform-origin: center;
-  }
-  
-  .svg-frame:hover svg #center {
+}
+
+.svg-frame:hover svg #center {
     transform: rotate(-30deg) translateX(45px) translateY(-3px);
-  }
-  
-  #out2 {
+}
+
+#out2 {
     animation: rotate16 7s ease-in-out infinite alternate;
     transform-origin: center;
-  }
-  
-  #out3 {
+}
+
+#out3 {
     animation: rotate16 3s ease-in-out infinite alternate;
     transform-origin: center;
     stroke: #ff0;
-  }
-  
-  #inner3,
-  #inner1 {
+}
+
+#inner3,
+#inner1 {
     animation: rotate16 4s ease-in-out infinite alternate;
     transform-origin: center;
-  }
-  
-  #center1 {
+}
+
+#center1 {
     fill: #ff0;
     animation: rotate16 2s ease-in-out infinite alternate;
     transform-origin: center;
-  }
-  
-  @keyframes rotate16 {
+}
+
+@keyframes rotate16 {
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  /* dec special */ 
+}
+
+/* snow for dec */
+/* From Uiverse.io by JkHuger */
 @keyframes snow {
-  0% {
-    opacity: 0;
-    transform: translateY(0px);
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
 
-  20% {
-    opacity: 1;
-  }
+    20% {
+        opacity: 1;
+    }
 
-  100% {
-    opacity: 1;
-    transform: translateY(650px);
-  }
+    100% {
+        opacity: 1;
+        transform: translateY(650px);
+    }
 }
 
 @keyframes astronaut {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .box-of-star1,
 .box-of-star2,
 .box-of-star3,
 .box-of-star4 {
-  width: 50px;
-  position: fixed;
-  z-index: 10;
-  left: 0;
-  top: 0;
-  transform: translateY(0px);
-  height: 700px;
+    width: 50px;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    transform: translateY(0px);
+    height: 700px;
 }
 
 .box-of-star1 {
-  animation: snow 5s linear infinite;
+    animation: snow 5s linear infinite;
 }
 
 .box-of-star2 {
-  animation: snow 5s -1.64s linear infinite;
+    animation: snow 5s -1.64s linear infinite;
 }
 
 .box-of-star3 {
-  animation: snow 5s -2.30s linear infinite;
+    animation: snow 5s -2.30s linear infinite;
 }
 
 .box-of-star4 {
-  animation: snow 5s -3.30s linear infinite;
+    animation: snow 5s -3.30s linear infinite;
 }
 
 .star {
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background-color: #FFF;
-  position: fixed;
-  z-index: 10;
-  opacity: 0.7;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.7;
 }
 
 .star:before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #FFF;
-  position: absolute;
-  z-index: 10;
-  top: 80px;
-  left: 70px;
-  opacity: .7;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    z-index: 10;
+    top: 80px;
+    left: 70px;
+    opacity: .7;
 }
 
 .star:after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #FFF;
-  position: absolute;
-  z-index: 10;
-  top: 8px;
-  left: 170px;
-  opacity: .9;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    z-index: 10;
+    top: 8px;
+    left: 170px;
+    opacity: .9;
 }
 
 .star-position1 {
-  top: 30px;
-  left: 20px;
+    top: 30px;
+    left: 20px;
 }
 
 .star-position2 {
-  top: 110px;
-  left: 250px;
+    top: 110px;
+    left: 250px;
 }
 
 .star-position3 {
-  top: 60px;
-  left: 570px;
+    top: 60px;
+    left: 570px;
 }
 
 .star-position4 {
-  top: 120px;
-  left: 900px;
+    top: 120px;
+    left: 900px;
 }
 
 .star-position5 {
-  top: 20px;
-  left: 1120px;
+    top: 20px;
+    left: 1120px;
 }
 
 .star-position6 {
-  top: 90px;
-  left: 1280px;
+    top: 90px;
+    left: 1280px;
 }
 
 .star-position7 {
-  top: 30px;
-  left: 1480px;
+    top: 30px;
+    left: 1480px;
 }
 
-.body{
-  background-color: black;
+/* social icons */
+
+.social_icons a {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #eee;
+    margin: 0 10px;
+    z-index: 1;
+    transition: .5s;
 }
-  
+
+.social_icons a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    transition: .5s;
+    color: #333;
+}
+
+.social_icons a::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: #eee;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social_icons a:hover {
+    transform: rotate(135deg);
+}
+
+.social_icons a:nth-child(1):hover {
+    background: #1DA1F2;
+    box-shadow: 0 0 5px #1DA1F2, 0 0 10px #1DA1F2;
+}
+
+.social_icons a:nth-child(2):hover {
+    background: #4267B2;
+    box-shadow: 0 0 5px #4267B2, 0 0 10px #4267B2;
+}
+
+.social_icons a:nth-child(3):hover {
+    background: #E1306C;
+    box-shadow: 0 0 5px #E1306C, 0 0 10px #E1306C;
+}
+
+.social_icons a:nth-child(4):hover {
+    background: #25D366;
+    box-shadow: 0 0 5px #25D366, 0 0 10px #25D366;
+}
+
+.social_icons a:nth-child(5):hover {
+    background: #FF0000;
+    box-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000;
+}
+
+.social_icons a:hover i {
+    transform: rotate(225deg);
+}
+
+.social_icons a:nth-child(1):hover i {
+    color: #1DA1F2;
+}
+
+.social_icons a:nth-child(2):hover i {
+    color: #4267B2;
+}
+
+.social_icons a:nth-child(3):hover i {
+    color: #E1306C;
+}
+
+.social_icons a:nth-child(4):hover i {
+    color: #25D366;
+}
+
+.social_icons a:nth-child(5):hover i {
+    color: #FF0000;
+}
