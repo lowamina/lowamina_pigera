@@ -948,8 +948,8 @@ footer {
 .box-of-star2,
 .box-of-star3,
 .box-of-star4 {
-  width: 100%;
-  position: absolute;
+  width: 50px;
+  position: fixed;
   z-index: 10;
   left: 0;
   top: 0;
