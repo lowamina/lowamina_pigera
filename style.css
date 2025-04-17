@@ -1,0 +1,713 @@
+.body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, rgb(36, 3, 3), rgb(59, 11, 86), rgba(79, 28, 137, 0.896), purple);
+    color: #fff;
+
+
+}
+
+:root {
+
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+
+
+}
+
+.intro {
+
+    margin-top: 200px;
+    margin-left: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+}
+
+
+
+.image {
+    float: right;
+    margin-top: -300px;
+    margin-right: 50px;
+
+
+}
+
+.projects {
+    margin-top: 620px;
+
+}
+
+.hr {
+    width: 50%;
+    /* Set the width of the <hr> (adjust as needed) */
+    margin: 20px auto;
+    /* Center horizontally with auto margins */
+    border: 0;
+    /* Remove default border */
+    height: 2px;
+    /* Set height of the line */
+    background-color: #fff0f0;
+    /* Set color of the line */
+}
+
+
+
+
+
+
+
+.container {
+    width: 100vw;
+    /* margin: 0 auto; */
+    padding: 20px;
+    text-align: center;
+    background-color: #26c41800;
+    margin-top: 300px;
+    border-radius: 40px;
+}
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer p {
+    color: #d1c2ee;
+    font-size: 14px;
+}
+
+/* menu togle phn */
+/* 992 px valin palleeha display block phn valata */
+#checkbox {
+    display: none;
+}
+
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .3s;
+    display: none;
+}
+
+
+
+/* #checkbox:checked + .toggle .bars {
+    margin-left: 13px;
+  } */
+
+#checkbox:checked+.toggle #bar2 {
+    transform: translateY(14px) rotate(60deg);
+    margin-left: 0;
+    transform-origin: right;
+    transition-duration: .3s;
+    z-index: 2;
+}
+
+#checkbox:checked+.toggle #bar1 {
+    transform: translateY(28px) rotate(-60deg);
+    transition-duration: .3s;
+    transform-origin: left;
+    z-index: 1;
+}
+
+#checkbox:checked+.toggle {
+    transform: rotate(-90deg);
+}
+
+/* #checkbox:checked + .toggle #bar3 {
+    transform: rotate(90deg);
+    transition-duration: .3s;
+    transform-origin:right;
+  } */
+
+
+
+
+
+/* conatct btn */
+/* .animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 0 0 2px #8376e7;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    font-family: "Permanent Marker", cursive;
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+.animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: white;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+    right: 16px;
+}
+
+.animated-button .arr-2 {
+    left: -25%;
+}
+
+.animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #8376e7;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: white;
+    border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+    right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+    left: 16px;
+}
+
+.animated-button:hover .text {
+    transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+    fill: white;
+}
+
+.animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px rgb(213, 236, 5);
+}
+
+.animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+} */
+
+
+/* navigation styles */
+
+
+
+.skill {
+    width: 410px;
+    height: 254px;
+    border-radius: 4px;
+    background: transparent;
+    display: flex;
+    gap: 10px;
+    padding: .7em;
+}
+
+.skill p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: transparent;
+    border: 5px solid #f2f1ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill p:hover {
+    flex: 9;
+}
+
+.skill p span {
+    min-width: 20em;
+    padding: .10em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #fbedf2;
+    letter-spacing: .1em;
+}
+
+.skill p:hover span {
+    transform: rotate(0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+footer {
+    background-color: #b0a5fdc5;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* Style for icons (Font Awesome in this case) */
+/* You can adjust the icon size and other properties here */
+.fa {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width:992px) {
+    .toggle {
+        display: block;
+
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition-duration: .3s;
+
+    }
+
+
+}
+
+@media screen and (max-width:713px) {
+    .image {
+        margin-top: 5px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .skill {
+        width: 310px;
+        height: 254px;
+        border-radius: 4px;
+        background: transparent;
+        display: flex;
+        gap: 10px;
+        padding: .7em;
+    }
+
+
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+/* 2025 updated nave bar */
+
+/* === removing default button style ===*/
+.buttonnav1 {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* button styling */
+.buttonnav1 {
+    --border-right: 6px;
+    --text-stroke-color: rgb(246, 246, 246);
+    --animation-color: rgb(255, 255, 255);
+    --fs-size: 1.6em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.buttonnav1:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+
+
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.burger input {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: rgb(175, 97, 226);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+
+.burger input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.burger input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.burger input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+@media screen and (max-width:992px) {
+    .burger {
+        display: block;
+
+
+    }
+
+}
+
+
+
+/* contact us */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: url(background.jpg); */
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact .content {
+    width: 70%;
+    text-align: center;
+    color: #fff;
+}
+
+.contact .content h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact .content p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+    background-image: linear-gradient(#8376e745, black)
+}
+
+
+
+.contact_info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_info .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_info .box {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact_info .box .map {
+    width: 100%;
+}
+
+.contact_info .box .icon {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #1c074aff;
+}
+
+.contact_info .box .text {
+    color: #fff;
+}
+
+.contact_info .box .text h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contact_info .box .text p {
+    font-size: 15px;
+}
+
+@media (max-width: 1270px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .container {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .contact_info .flex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 850px) {
+    .contact .content {
+        width: 90%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+
+
+    .contact_info {
+        width: 100%;
+    }
+}
+
+
+
+#center1 {
+    fill: #ff0;
+    animation: rotate16 2s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+
+
+
+
+/* social icons */
+
+/* font new */
+
+
+/* .montserrat-new {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+} */
+
+/* From Uiverse.io by eirikvold */
+.button1 {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to left, #27073f 0%, #876fac 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100px;
+
+    box-shadow: 0px 5px 10px rgba(216, 209, 209, 0.2);
+    transition: all 0.3s;
+}
+
+.button1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button1:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button1 span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+}
+
+.button1 svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+}
+
+.button1 .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+}
+
+.button1:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button1:hover svg {
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* rewiwe new test */
