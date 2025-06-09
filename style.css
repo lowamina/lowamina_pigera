@@ -1,8 +1,10 @@
 .body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(to right, rgb(36, 3, 3), rgb(59, 11, 86), rgba(79, 28, 137, 0.896), purple);
-    color: #fff;
+    color: #e0e0e0;
+    background: linear-gradient(to right, #030708, #203a43, #2c5364);
+
+
 
 
 }
@@ -14,7 +16,7 @@
     --text-color: #111528;
     --secondary-text: #232738;
     --primary-color: #3a435d;
-    --accent-color: #0071ff;
+    --accent-color: #ebdd83;
 
 
 }
@@ -29,7 +31,12 @@
     position: absolute;
 }
 
+#btn {
+    background: linear-gradient(to right, #1b2a41, #4a678a);
+    color: #ffffff;
+    
 
+}
 
 .image {
     float: right;
@@ -46,15 +53,15 @@
 
 .hr {
     width: 50%;
-    /* Set the width of the <hr> (adjust as needed) */
+    
     margin: 20px auto;
-    /* Center horizontally with auto margins */
+    
     border: 0;
-    /* Remove default border */
+    
     height: 2px;
-    /* Set height of the line */
+    
     background-color: #fff0f0;
-    /* Set color of the line */
+   
 }
 
 
@@ -65,7 +72,7 @@
 
 .container {
     width: 100vw;
-    /* margin: 0 auto; */
+    
     padding: 20px;
     text-align: center;
     background-color: #26c41800;
@@ -379,38 +386,38 @@ footer {
 
 /* button styling */
 .buttonnav1 {
-    --border-right: 6px;
-    --text-stroke-color: rgb(246, 246, 246);
-    --animation-color: rgb(255, 255, 255);
-    --fs-size: 1.6em;
-    letter-spacing: 3px;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
     text-decoration: none;
-    font-size: var(--fs-size);
-    font-family: "Arial";
-    position: relative;
     text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--text-stroke-color);
+    outline: 0;
+    border: 0;
+    padding: 1rem;
 }
+
+
 
 /* this is the text, when you hover on button */
-.hover-text {
-    position: absolute;
-    box-sizing: border-box;
-    content: attr(data-text);
-    color: var(--animation-color);
-    width: 0%;
-    inset: 0;
-    border-right: var(--border-right) solid var(--animation-color);
-    overflow: hidden;
-    transition: 0.5s;
-    -webkit-text-stroke: 1px var(--animation-color);
+.buttonnav1:before {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25, .8, .25, 1);
+    width: 0;
 }
 
-/* hover */
-.buttonnav1:hover .hover-text {
-    width: 100%;
-    filter: drop-shadow(0 0 23px var(--animation-color))
+.buttonnav1:hover:before {
+    background-color: #fff;
+    width: 3rem;
 }
 
 
@@ -432,9 +439,11 @@ footer {
 .burger span {
     display: block;
     position: absolute;
-    height: 4px;
+    height: 6px;
     width: 100%;
-    background: rgb(175, 97, 226);
+    background: linear-gradient(to right, #1b2a41, #4a678a);
+    
+;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -526,7 +535,8 @@ footer {
     justify-content: center;
     gap: 100px;
     margin-top: 50px;
-    background-image: linear-gradient(#8376e745, black)
+    background: linear-gradient(to right, #192430, #6c7a89);
+
 }
 
 
@@ -639,7 +649,10 @@ footer {
 .button1 {
     font-family: inherit;
     font-size: 18px;
-    background: linear-gradient(to left, #27073f 0%, #876fac 100%);
+    background: linear-gradient(to right, #1b2a41, #4a678a);
+    color: #ffffff;
+    /* Crisp White for clarity */
+
     color: white;
     padding: 0.8em 1.2em;
     display: flex;
@@ -707,7 +720,4 @@ footer {
 
 
 
-
-
-
-/* rewiwe new test */
+/*Last update 06.09.2025  */
